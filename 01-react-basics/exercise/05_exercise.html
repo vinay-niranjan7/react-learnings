@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>05_exercise</title>
+</head>
+<body>
+    <div class="js-container"></div>
+
+    <script>
+        var socks_price=10
+        var socks_quantity=1
+        var tshirt_price=8
+        var tshirt_quantity=2
+        var total=((socks_price*socks_quantity)+(tshirt_price*tshirt_quantity))
+        console.log(total)
+    </script>
+    
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <script type="text/babel">
+        const div =(
+            <div>
+                <p>Cotton socks</p>
+                <p>Price :$10</p>
+                <p>Quantity : 1</p>
+                <p>Tshirt</p>
+                <p>Price :$8</p>
+                <p>Quantity : 2</p>
+
+                <p>Total: ${total}</p>
+            </div>
+            
+        );
+                
+        const container = document.querySelector('.js-container');
+        ReactDOM.createRoot(container).render(div);
+    </script>
+</body>
+</html>

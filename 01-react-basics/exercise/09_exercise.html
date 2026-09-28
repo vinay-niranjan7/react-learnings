@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>09_exercise</title>
+</head>
+<body>
+    <div class="js-container"></div>
+
+    <script src="https://unpkg.com/supersimpledev@8.6.4/dayjs.js"></script>
+    <script>
+        var time=dayjs().format('HH:mm:ss');
+    </script>
+    
+    
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <script type="text/babel">
+        
+        const paragraph=<p>Current Time: {time}</p>
+        const container = document.querySelector('.js-container');
+        ReactDOM.createRoot(container).render(paragraph);
+    </script>
+</body>
+</html>
